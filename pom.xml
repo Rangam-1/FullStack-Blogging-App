@@ -11,7 +11,7 @@
 	<groupId>com.example</groupId>
 	<artifactId>twitter-app</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>twitter-app</name>
+	<name>Blogger</name>
 	<description>Demo project for Spring Boot</description>
 	<url/>
 	<licenses> 
