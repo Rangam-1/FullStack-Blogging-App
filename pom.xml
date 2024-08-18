@@ -28,7 +28,6 @@
 	</scm>
 	<properties>
 		<java.version>17</java.version>
-		<sonar.host.url>http://13.232.2.47:9000</sonar.host.url>
 	</properties>
 	<dependencies>
 		<!-- https://mvnrepository.com/artifact/org.sonarsource.scanner.maven/sonar-maven-plugin -->
@@ -87,11 +86,11 @@
 	 <distributionManagement>
         <repository>
             <id>maven-releases</id>
-            <url>http://13.233.119.67:8082/artifactory/libs-release-local/</url>
+            <url>http://13.201.131.216:8082/artifactory/libs-release-local/</url>
         </repository>
         <snapshotRepository>
             <id>maven-snapshots</id>
-            <url>http://13.233.119.67:8082/artifactory/libs-snapshot-local/</url>
+            <url>http://13.201.131.216:8082/artifactory/libs-snapshot-local/</url>
         </snapshotRepository>
     </distributionManagement>
 
