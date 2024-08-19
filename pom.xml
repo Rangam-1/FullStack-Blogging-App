@@ -86,11 +86,11 @@
 	 <distributionManagement>
         <repository>
             <id>maven-releases</id>
-            <url>http://13.201.131.216:8082/artifactory/libs-release-local/</url>
+            <url>http://3.111.38.47:8082/artifactory/libs-release-local/</url>
         </repository>
         <snapshotRepository>
             <id>maven-snapshots</id>
-            <url>http://13.201.131.216:8082/artifactory/libs-snapshot-local/</url>
+            <url>http://3.111.38.47:8082/artifactory/libs-snapshot-local/</url>
         </snapshotRepository>
     </distributionManagement>
 
