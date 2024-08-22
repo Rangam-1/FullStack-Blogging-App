@@ -1,0 +1,5 @@
+FROM amazonlinux
+RUN yum install wget git java-17-amazon-corretto.x86_64 httpd -y && \
+    git clone https://github.com/keerti1924/E-Learning-Website-HTML-CSS.git && \
+    mv E-Learning-Website-HTML-CSS/* /var/www/html/
+CMD [ "/usr/sbin/httpd", "-D", "FOREGROUND" ]
