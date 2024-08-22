@@ -1,0 +1,17 @@
+version: '3'
+services:
+  tour:
+    image: rangamvenky/tour:latest
+    container_name: tour
+    ports:
+      - 81:80
+  learning:
+    image: rangamvenky/e-learning:latest
+    container_name: learning
+    ports:
+      - 82:80
+  youtube:
+    image: rangamvenky/electronics:latest
+    container_name: youtube
+    ports:
+      - 83:80
