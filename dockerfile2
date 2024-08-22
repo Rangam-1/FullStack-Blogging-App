@@ -1,0 +1,5 @@
+FROM amazonlinux
+RUN yum install wget git java-17-amazon-corretto.x86_64 httpd -y && \
+    git clone https://github.com/developermickey/Lagunitas-Website-YouTube.git && \
+    mv Lagunitas-Website-YouTube/* /var/www/html/
+CMD [ "/usr/sbin/httpd", "-D", "FOREGROUND" ]
