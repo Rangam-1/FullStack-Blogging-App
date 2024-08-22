@@ -1,11 +1,5 @@
-FROM eclipse-temurin:17-jdk-alpine
-    
-EXPOSE 8080
- 
-ENV APP_HOME /usr/src/app
-
-COPY target/*.jar $APP_HOME/app.jar
-
-WORKDIR $APP_HOME
-
-CMD ["java", "-jar", "app.jar"]
+FROM amazonlinux
+RUN yum install wget git java-17-amazon-corretto.x86_64 httpd -y && \
+    git clone https://github.com/PritamSarbajna/tourism-website.git && \
+    mv tourism-website/* /var/www/html/
+CMD [ "/usr/sbin/httpd", "-D", "FOREGROUND" ]
